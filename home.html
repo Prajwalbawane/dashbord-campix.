@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Placement Portal</title>
+    <script
+      src="https://kit.fontawesome.com/d97294832d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="home.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="placement_logo.png" alt="Placement Portal Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Job Listings</a></li>
+          <li><a href="#">Companies</a></li>
+          <li><a href="#">Students</a></li>
+        </ul>
+      </nav>
+
+      <div class="dropdown">
+        <img
+          class="avatar"
+          src="https://demo.creativeitem.com/ekattor/uploads/users/248.jpg"
+          alt="Avatar"
+        />
+        <div class="dropdown-content">
+          <a href="#">Logout</a>
+          <a href="#">Edit Profile</a>
+        </div>
+      </div>
+    </header>
+
+    <aside>
+      <nav>
+        <div class="avatar">
+          <img
+            src="https://demo.creativeitem.com/ekattor/uploads/users/248.jpg"
+            alt="Avatar"
+          />
+          <p>Prajwal Bawane</p>
+        </div>
+        <ul>
+          <li>
+            <i class="fa-solid fa-gauge-simple-high"></i>
+            <a href="#">Dashboard</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-briefcase"></i>
+            <a href="#">Job Listings</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-building"></i>
+            <a href="#">Companies</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-users"></i>
+            <a href="#">Students</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-calendar-check"></i>
+            <a href="#">Interviews</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-clipboard-check"></i>
+            <a href="#">Job Applications</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main content -->
+    <div class="container">
+      <div class="box">
+        <i class="fa-solid fa-briefcase"></i>
+        <a href="#">Job Listings</a>
+        <div class="job-stats">
+          <h2>25</h2>
+          <p>Available Job Listings</p>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fa-solid fa-calendar-check"></i>
+        <a href="#">Interviews Scheduled</a>
+        <div class="interview-stats">
+          <h2>10</h2>
+          <p>Upcoming Interviews</p>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fa-solid fa-clipboard-check"></i>
+        <a href="#">Applications</a>
+        <div class="application-stats">
+          <h2>45</h2>
+          <p>Total Applications Submitted</p>
+        </div>
+      </div>
+      <div class="box">
+        <i class="fa-solid fa-building"></i>
+        <a href="#">Top Recruiters</a>
+      </div>
+    </div>
+
+    <script>
+      // JavaScript for handling profile editing functionality
+      document.querySelector(".dropdown-content a:nth-child(2)").addEventListener("click", function () {
+        document.querySelector(".profile-container").style.display = "flex";
+      });
+    </script>
+  </body>
+</html>

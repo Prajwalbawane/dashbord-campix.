@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #111;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav h1 {
+    color: #fff;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.nav2 {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-elem h4 {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+}
+
+.nav-elem h4:hover {
+    color: #007BFF;
+    transform: translateY(-2px);
+}
+
+.nav-elem h4::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #007BFF;
+    left: 0;
+    bottom: -6px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.nav-elem h4:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.nav-elem h4 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Active state */
+.nav-elem h4.active {
+    color: #FF6347; /* Tomato color */
+}
+
+.nav-elem h4.active::after {
+    background-color: #FF6347;
+}
+
+
+/* 
+@media (max-width: 768px) {
+    nav h1 {
+        font-size: 1.4rem;
+    }
+
+    .nav2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-elem h4 {
+        font-size: 0.9rem;
+    }
+} */
